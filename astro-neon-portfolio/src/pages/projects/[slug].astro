@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+---
+
+<BaseLayout title={`${project.data.title} | Portfolio`} description={project.data.description}>
+  <main class="project-detail section-pad">
+    <a class="back-link" href="/">← Back to Quest Select</a>
+
+    <div class="detail-hero" data-reveal>
+      <div>
+        <p class="eyebrow">CASE STUDY</p>
+        <h1>{project.data.title}</h1>
+        <p>{project.data.description}</p>
+
+        <div class="tags big-tags">
+          {project.data.tags.map((tag) => <span>{tag}</span>)}
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn" href={project.data.githubUrl} target="_blank" rel="noreferrer">
+            Open GitHub Code
+          </a>
+
+          {project.data.demoUrl && (
+            <a class="btn btn-secondary" href={project.data.demoUrl} target="_blank" rel="noreferrer">
+              Live Demo
+            </a>
+          )}
+        </div>
+      </div>
+
+      <img src={project.data.image} alt={`${project.data.title} screenshot or diagram`} />
+    </div>
+
+    <article class="prose-panel" data-reveal>
+      <Content />
+    </article>
+  </main>
+</BaseLayout>

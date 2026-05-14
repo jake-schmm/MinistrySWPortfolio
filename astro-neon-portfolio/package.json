@@ -1,0 +1,16 @@
+{
+  "name": "astro-neon-portfolio",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "latest",
+    "astro": "latest",
+    "lucide-astro": "latest"
+  },
+  "devDependencies": {}
+}

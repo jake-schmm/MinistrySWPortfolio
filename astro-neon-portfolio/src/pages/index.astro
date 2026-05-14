@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+---
+<BaseLayout>
+  <main>
+    <Hero />
+
+    <section class="section-pad mission" data-reveal>
+      <p class="eyebrow">MISSION LOG</p>
+      <h2>Passion reflected through meaningful projects. Creativity shaped from ideas into experiences.</h2>
+      <p>This portfolio demonstrates a small glimpse of what I've done outside of my regular job over the past few years, whether in school (usually as part of a group project) or for fun.</p>
+    </section>
+
+    <section id="projects" class="section-pad projects-section">
+      <div class="section-heading" data-reveal>
+        <p class="eyebrow">QUEST SELECT</p>
+        <h2>Featured Projects</h2>
+      </div>
+      <div class="project-grid">
+        {projects.map((project) => <ProjectCard project={project} slug={project.id} />)}
+      </div>
+    </section>
+  </main>
+</BaseLayout>
