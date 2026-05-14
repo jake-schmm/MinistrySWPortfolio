@@ -2,9 +2,9 @@
 title: Prairie Rush
 description: An arcade-style Unity game project focused on user-friendly interaction design, gameplay responsiveness, and neon-inspired visual feedback.
 icon: Gamepad2
-githubUrl: /coming-soon/
-demoUrl: https://jake-schmm.itch.io/prairie-rush
-image: /images/projects/prairie-rush.svg
+githubUrl: ../../coming-soon
+downloadUrl: https://jake-schmm.itch.io/prairie-rush
+image: images/projects/prairie-rush.svg
 tags: [Unity, C#, UI/UX, Game Development]
 featured: true
 order: 4
@@ -16,7 +16,7 @@ Prairie Rush was a single-player game built in Unity for a User Interaction Engi
 
 ## How to Access
 
-Please contact me directly for the project's code. Otherwise, you can use the "Live Demo" link above, which will redirect you to my itch.io profile where you can download the game for Windows. It will say untrusted publisher at the moment, as I don't have formal credentials or enough people who have played the game yet.
+Please contact me directly for the project's code. Otherwise, you can use the "Download" link above, which will redirect you to my itch.io profile where you can download the game for Windows. It will say untrusted publisher at the moment, as I don't have formal credentials or enough people who have played the game yet.
 
 ## My Contributions
 

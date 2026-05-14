@@ -17,7 +17,7 @@ const { Content } = await render(project);
 
 <BaseLayout title={`${project.data.title} | Portfolio`} description={project.data.description}>
   <main class="project-detail section-pad">
-    <a class="back-link" href="/">← Back to Quest Select</a>
+    <a class="back-link" href={import.meta.env.BASE_URL}>← Back to Quest Select</a>
 
     <div class="detail-hero" data-reveal>
       <div>
@@ -34,15 +34,29 @@ const { Content } = await render(project);
             Open GitHub Code
           </a>
 
-          {project.data.demoUrl && (
-            <a class="btn btn-secondary" href={project.data.demoUrl} target="_blank" rel="noreferrer">
+          {project.data.downloadUrl ? (
+            <a
+              class="btn btn-secondary"
+              href={project.data.downloadUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Download
+            </a>
+          ) : project.data.demoUrl ? (
+            <a
+              class="btn btn-secondary"
+              href={`${import.meta.env.BASE_URL}${project.data.demoUrl.replace(/^\/+/, '')}`}
+              target="_blank"
+              rel="noreferrer"
+            >
               Live Demo
             </a>
-          )}
+          ) : null}
         </div>
       </div>
 
-      <img src={project.data.image} alt={`${project.data.title} screenshot or diagram`} />
+      <img src={`${import.meta.env.BASE_URL}${project.data.image}`} alt={`${project.data.title} screenshot or diagram`} />
     </div>
 
     <article class="prose-panel" data-reveal>

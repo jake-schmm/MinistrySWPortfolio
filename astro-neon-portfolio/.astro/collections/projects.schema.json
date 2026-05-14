@@ -14,6 +14,9 @@
     "demoUrl": {
       "type": "string"
     },
+    "downloadUrl": {
+      "type": "string"
+    },
     "icon": {
       "type": "string"
     },

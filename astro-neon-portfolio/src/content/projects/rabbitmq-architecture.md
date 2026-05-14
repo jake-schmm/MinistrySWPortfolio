@@ -3,8 +3,8 @@ title: RabbitMQ Messaging Architecture
 description: A resilient message-driven workflow using MassTransit, RabbitMQ exchanges, queues, and consumers.
 icon: Boxes
 githubUrl: https://github.com/jake-schmm/RabbitMQPractice
-demoUrl: /coming-soon/
-image: /images/projects/rabbitmq.svg
+demoUrl: coming-soon
+image: images/projects/rabbitmq.svg
 tags: [RabbitMQ, MassTransit, C#, Architecture]
 featured: true
 order: 2

@@ -3,8 +3,8 @@ title: Adventure Partner Finder
 description: A PHP and MySQL app concept for matching people around shared adventures and preferences.
 icon: Rocket
 githubUrl: https://github.com/jnbaum/SWE6733-Group-1
-demoUrl: /coming-soon/
-image: /images/projects/adventure.svg
+demoUrl: coming-soon
+image: images/projects/adventure.svg
 tags: [PHP, MySQL, Profiles, Matching]
 featured: true
 order: 1

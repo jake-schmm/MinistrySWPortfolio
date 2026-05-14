@@ -2,9 +2,9 @@
 title: WordProcessor
 description: A rich-text writing app for creating, saving, and sharing documents with custom visibility controls.
 githubUrl: https://github.com/jake-schmm/wordprocessor
-demoUrl: /coming-soon/
+demoUrl: coming-soon
 icon: file-text
-image: /images/projects/wordprocessor.svg
+image: images/projects/wordprocessor.svg
 tags: [Rich Text, Documents, Sharing, Permissions]
 featured: true
 order: 3
