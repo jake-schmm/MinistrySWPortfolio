@@ -43,9 +43,3 @@ order: 3
 
 Write the case study here.
 ```
-
-## Admin CMS
-
-The `/admin/` route uses Decap CMS. For it to save changes on a deployed static site, deploy to Netlify and enable Identity + Git Gateway, or replace the backend config with your Git provider's supported Decap backend.
-
-A purely static site cannot save new projects to a database by itself. This setup saves project markdown/images back into your Git repo, then your host rebuilds the static site.
