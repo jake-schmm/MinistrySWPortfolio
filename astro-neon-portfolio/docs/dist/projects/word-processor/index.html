@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="A rich-text writing app for creating, saving, and sharing documents with custom visibility controls."><title>WordProcessor | Portfolio</title><link rel="stylesheet" href="/_astro/BaseLayout.BmuZNdUd.css"></head> <body> <div class="scanlines" aria-hidden="true"></div> <div class="grid-bg" aria-hidden="true"></div> <div class="light-beams"></div>  <main class="project-detail section-pad"> <a class="back-link" href="/">← Back to Quest Select</a> <div class="detail-hero" data-reveal> <div> <p class="eyebrow">CASE STUDY</p> <h1>WordProcessor</h1> <p>A rich-text writing app for creating, saving, and sharing documents with custom visibility controls.</p> <div class="tags big-tags"> <span>Rich Text</span><span>Documents</span><span>Sharing</span><span>Permissions</span> </div> <div class="hero-actions"> <a class="btn" href="https://github.com/jake-schmm/wordprocessor" target="_blank" rel="noreferrer">
+Open GitHub Code
+</a> <a class="btn btn-secondary" href="/coming-soon/" target="_blank" rel="noreferrer">
+Live Demo
+</a> </div> </div> <img src="/images/projects/wordprocessor.svg" alt="WordProcessor screenshot or diagram"> </div> <article class="prose-panel" data-reveal> <h2 id="overview">Overview</h2>
+<p>WordProcessor is a document-writing application that lets users create rich-text documents, save their work, and share documents with others based on visibility settings.</p>
+<h2 id="core-features">Core Features</h2>
+<ul>
+<li>Create and edit rich-text documents</li>
+<li>Save documents for later access</li>
+<li>Share documents with other users</li>
+<li>Set document visibility levels</li>
+<li>View documents based on access permissions</li>
+</ul>
+<h2 id="visibility-levels">Visibility Levels</h2>
+<h3 id="public">Public</h3>
+<p>Anyone with access to the site can view the document.</p>
+<h3 id="self-only">Self-Only</h3>
+<p>Only the document owner can view and edit the document.</p>
+<h3 id="friends-only">Friends-Only</h3>
+<p>Only approved friends can view the document.</p>
+<h2 id="project-goal">Project Goal</h2>
+<p>The goal of this project is to create a clean, focused writing experience while also supporting controlled sharing. Instead of every document being either fully private or fully public, users can choose the level of visibility that fits the purpose of the document.
+It was also designed to practice layered architecture for the first time.</p>
+<h2 id="example-use-cases">Example Use Cases</h2>
+<ul>
+<li>A user writes a private journal entry and marks it as <strong>Self-Only</strong></li>
+<li>A user creates a tutorial and marks it as <strong>Public</strong></li>
+<li>A user shares a draft with friends by marking it as <strong>Friends-Only</strong></li>
+<li>A user edits and saves a document over time</li>
+</ul> </article> </main>  <script type="module">const r=document.querySelectorAll("[data-reveal]"),t=new IntersectionObserver(e=>{e.forEach(s=>{s.isIntersecting&&s.target.classList.add("is-visible")})},{threshold:.16});r.forEach(e=>t.observe(e));</script> </body> </html>
