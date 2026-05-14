@@ -24,11 +24,14 @@ jobs:
           cache: npm
 
       - run: npm ci
+        working-directory: ./astro-neon-portfolio
+      
       - run: npm run build
-
+        working-directory: ./astro-neon-portfolio
+      
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./astro-neon-portfolio/dist
 
   deploy:
     needs: build
